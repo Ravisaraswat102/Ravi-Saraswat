@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ravi Saraswat — Frontend Developer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    :root{
+      --primary:#0d6efd;
+      --muted:#6c757d;
+      --card-bg: #ffffff;
+      --page-bg: #f5f7fb;
+    }
+    body{ background: var(--page-bg); color:#222; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    .hero{
+      background: linear-gradient(90deg, rgba(11,78,196,0.92), rgba(27,45,128,0.92));
+      color: #fff;
+      padding: 36px 24px;
+      border-radius: .75rem;
+      box-shadow: 0 10px 30px rgba(13,110,253,0.12);
+    }
+    .avatar {
+      width: 110px; height: 110px; border-radius: 14px; object-fit: cover;
+      border: 4px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.04);
+    }
+    .chip { font-size: .85rem; padding: .35rem .7rem; border-radius: 999px; background:#eef5ff; color:var(--primary); }
+    .skill-bar { height:8px; border-radius: 999px; background:#e9ecef; overflow:hidden; }
+    .skill-fill { height:100%; background: linear-gradient(90deg,#4b6cb7,#182848); }
+    .section-title { border-left:4px solid var(--primary); padding-left:12px; }
+    .card-shadow { box-shadow: 0 8px 24px rgba(17,24,39,0.06); }
+    footer small { color: var(--muted); }
+    @media (max-width:576px){ .hero { text-align:center } .hero .row > .col-md-8 { margin-top: 16px; } }
+  </style>
+</head>
+<body>
+  <main class="container py-5">
+
+    <!-- HERO -->
+    <div class="hero mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-2 text-center">
+          <!-- optional avatar (replace src if you have) -->
+          <img class="avatar mx-auto d-block" src="DSC_01023.jpg" alt="Ravi Saraswat">
+        </div>
+        <div class="col-md-8">
+          <h1 class="mb-1">Ravi Saraswat</h1>
+          <div class="mb-2"><strong class="chip">Frontend Developer</strong></div>
+          <p class="mb-2" style="opacity:.95; max-width:780px;">
+            Motivated Web Developer with 1 year of experience building responsive, user-friendly websites and web applications. Skilled in HTML, CSS, JavaScript, React, PHP and SQL. Strong foundation in networking (CCNA & CCNP) and hands-on with UNIX & Git.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="mailto:ravisaraswat12525@gmail.com" class="text-white text-decoration-none"><i class="fa-solid fa-envelope me-2"></i>ravisaraswat12525@gmail.com</a>
+            <span class="text-white">|</span>
+            <a class="text-white text-decoration-none"><i class="fa-solid fa-phone me-2"></i>+91 9760222907</a>
+            <span class="text-white">|</span>
+            <a href="https://github.com/Ravisaraswat102" target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-github me-2"></i>github.com/Ravisaraswat102</a>
+            <span class="text-white">|</span>
+            <a href="https://www.linkedin.com/in/ravi-saraswat-604142251" target="_blank" class="text-white text-decoration-none"><i class="fa-brands fa-linkedin me-2"></i>linkedin.com/in/ravi-saraswat-604142251</a>
+          </div>
+        </div>
+
+        <div class="col-md-2 text-md-end text-center mt-3 mt-md-0">
+          <a href="Ravi_Saraswat.pdf" class="btn btn-light btn-sm me-2" download><i class="fa-solid fa-download me-1"></i>Download Resume</a>
+          <a href="#contact" class="btn btn-outline-light btn-sm"><i class="fa-solid fa-paper-plane me-1"></i>Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row gy-4">
+
+      <!-- Left column -->
+      <div class="col-lg-8">
+
+        <!-- Professional Summary -->
+        <section class="mb-4 card-shadow p-4 bg-white rounded">
+          <h4 class="section-title">Professional Summary</h4>
+          <p class="mt-3 mb-0">
+            Motivated Web Developer with 1 year of experience in building and maintaining responsive, user-friendly websites and web applications. Skilled in HTML, CSS, JavaScript, React, and SQL, with a strong foundation in networking (CCNA & CCNP). Adept at problem-solving, debugging, and collaborating in team environments. Seeking an opportunity to contribute to innovative IT projects and grow as a software professional.
+          </p>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-4 card-shadow p-4 bg-white rounded">
+          <div class="d-flex justify-content-between align-items-start">
+            <h4 class="section-title">Experience</h4>
+            <small class="text-muted">2023 — 2025</small>
+          </div>
+
+          <div class="mt-3">
+            <h5 class="mb-1">Web Developer</h5>
+            <div class="text-muted mb-2">Urgent IT Solution — Greater Noida, UP</div>
+            <ul>
+              <li>Designed and developed responsive, mobile-first websites improving performance and usability.</li>
+              <li>Built dynamic components with React.js for interactive UI and integrated REST APIs.</li>
+              <li>Optimized web applications for speed and cross-browser compatibility.</li>
+              <li>Collaborated with team members to deliver multiple client projects on time.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-4 card-shadow p-4 bg-white rounded">
+          <h4 class="section-title">Selected Projects</h4>
+
+          <div class="mt-3">
+            <h5>Online Voting System using Blockchain (MCA Project)</h5>
+            <p class="mb-1"><small class="text-muted">MCA — Academic Project</small></p>
+            <p>Developed a secure and transparent voting system using blockchain concepts to ensure immutability and prevent manipulation of voting data. Implemented decentralized ledger logic and designed UI for voters and admin.</p>
+          </div>
+
+          <div class="mt-3">
+            <h5>Portfolio Website</h5>
+            <p>Personal portfolio built with HTML, CSS & JavaScript to showcase skills, projects, and resume. Responsive design and accessibility considerations included.</p>
+          </div>
+
+          <div class="mt-3">
+            <h5>Student Management System</h5>
+            <p>Developed using PHP & MySQL to manage student records, attendance, and generate performance reports.</p>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-4 card-shadow p-4 bg-white rounded">
+          <h4 class="section-title">Education</h4>
+
+          <div class="mt-3">
+            <h5>Master of Computer Applications (MCA)</h5>
+            <p class="mb-0 text-muted">Galgotias University, Greater Noida — CGPA: 7.1</p>
+          </div>
+
+          <div class="mt-3">
+            <h5>Bachelor of Computer Applications (BCA)</h5>
+            <p class="mb-0 text-muted">B.I.T. College, Muzaffarnagar</p>
+          </div>
+
+          <div class="mt-3">
+            <h5>Senior Secondary (XII)</h5>
+            <p class="mb-0 text-muted">D.A.V Inter College, Jansath, Muzaffarnagar</p>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right column -->
+      <div class="col-lg-4">
+
+        <!-- Skills -->
+        <aside class="mb-4 card-shadow p-4 bg-white rounded">
+          <h5 class="section-title">Technical Skills</h5>
+
+          <div class="mt-3">
+            <!-- Skill item -->
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <small>HTML5 & CSS3</small><small class="text-muted">90%</small>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <small>JavaScript</small><small class="text-muted">78%</small>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <small>React.js</small><small class="text-muted">72%</small>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <small>PHP & MySQL</small><small class="text-muted">70%</small>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <small>SQL / PL-SQL</small><small class="text-muted">68%</small>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:68%"></div></div>
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <small>Git / UNIX</small><small class="text-muted">65%</small>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Certifications / Networking -->
+        <aside class="mb-4 card-shadow p-4 bg-white rounded">
+          <h5 class="section-title">Certifications & Networking</h5>
+          <ul class="mb-0 mt-3">
+            <li>CCNA</li>
+            <li>CCNP</li>
+          </ul>
+        </aside>
+
+        <!-- Achievements -->
+        <aside class="mb-4 card-shadow p-4 bg-white rounded">
+          <h5 class="section-title">Achievements</h5>
+          <ul class="mb-0 mt-3">
+            <li>2nd Prize — Badminton Competition, B.I.T. College (2018)</li>
+            <li>Event Coordinator — Annual Function (2018)</li>
+            <li>Dance Group Coordinator — B.I.T. College (2017)</li>
+          </ul>
+        </aside>
+
+        <!-- Hobbies -->
+        <aside class="mb-4 card-shadow p-4 bg-white rounded">
+          <h5 class="section-title">Hobbies</h5>
+          <p class="mb-0">Sports (Cricket / Volleyball), Travelling, Reading Tech Articles & Research</p>
+        </aside>
+
+      </div>
+    </div>
+
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" class="mt-5 card-shadow p-4 bg-white rounded">
+      <div class="d-flex justify-content-between align-items-center flex-wrap">
+        <div>
+          <h5 class="mb-1">Let's build something great</h5>
+          <p class="mb-0 text-muted">Reach out if you'd like to collaborate — I respond quickly.</p>
+        </div>
+        <div class="text-end">
+          <a href="mailto:ravisaraswat12525@gmail.com" class="btn btn-primary me-2"><i class="fa-regular fa-envelope me-1"></i> Email</a>
+          <a href="https://wa.me/919760222907" target="_blank" class="btn btn-outline-primary"><i class="fa-brands fa-whatsapp me-1"></i> WhatsApp</a>
+        </div>
+      </div>
+      <hr class="my-3">
+      <footer class="d-flex justify-content-between align-items-center">
+        <small>© <strong>Ravi Saraswat</strong> — Frontend Developer</small>
+        <small>References available upon request</small>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
